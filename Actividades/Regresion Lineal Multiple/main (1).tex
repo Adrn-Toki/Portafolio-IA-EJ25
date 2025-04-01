@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Regresion Lineal Múltiple}
+\author{Adrián Esteban Morales Rodriguez}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+
+Un modelo de regresión lineal múltiple es un modelo estadístico versátil para evaluar las relaciones entre un destino continuo y los predictores.
+
+Los predictores pueden ser campos continuos, categóricos o derivados, de modo que las relaciones no lineales también estén soportadas. El modelo es lineal porque consiste en términos de aditivos en los que cada término es un predictor que se multiplica por un coeficiente estimado. El término de constante (intercepción) también se añade normalmente al modelo.
+
+La regresión lineal se utiliza para generar conocimientos para los gráficos que contienen al menos dos campos continuos con uno identificado como el destino y el otro como un predictor. Además, se puede especificar un predictor categórico y dos campos continuos auxiliares en un gráfico y se pueden utilizar para generar un modelo de regresión adecuado.
+
+\section{Metodología}
+Esta actividad consta ahora de obtener la misma predicción que en la regresion lineal simple pero ahora agregando mas valores de entrada.
+Tendremos dos valores de entrada, el primero siendo la cantidad de palabras y el segundo siendo una suma de las columnas: cantidad de enlaces, comentarios y cantidad de imagenes.
+\begin{itemize}
+\item Paso 1
+
+Agregar una nueva variable que sera la suma de las tres columnas enlaces, comentarios e imagenes para asi tener una dimensión más:
+
+\includegraphics[width=15cm, height=7cm]{1.png}
+\item Paso 2
+
+Crear un nuevo objeto de regresion lineal pero el cual ahora tendra dos dimensiones que entrenar.
+
+\includegraphics{2.png}
+
+\item Paso 3
+
+Visualizar el gráfico en 3D
+
+\includegraphics[width=15cm, height=9cm]{3.png}
+\includegraphics[width=15cm, height=9cm]{4.png}
+
+\item Paso 4
+
+Filtrar los datos de cantidad de palabras para quedarnos con los registros con menos de 3,500 palabras y también con los que tengan Cantidad de compartidos menos a 80,000. Pintando en azul los
+ puntos con menos de 1808 palabras (la media) y en naranja los que tengan más.
+
+\includegraphics[width=15cm, height=9cm]{3.png}
+\includegraphics[width=15cm, height=9cm]{4.png}
+
+\end{itemize}
+
+\section{Resultados}
+
+Finalmente obtuve la siguiente predicción de la posible cantidad de compartidos en redes sociales con un articulo de 2000 palabras, 10 enlaces, 4 comentarios y 6 imagenes.
+
+\includegraphics{5.png}
+
+\section{Conclusión}
+Tras la realización de esta actividad solo tuve algunos incovennientes con la creación del grafico en 3d el cual no se podía visualizar.
+Viendo los resultados y comparando el método de regresión lineal simple y multiple, veo que son menos share en la multiple pero siento que es un resultado mas real ya que toma mas parámetros y eso influye mucho con los resultados.
+
+
+\end{document}
