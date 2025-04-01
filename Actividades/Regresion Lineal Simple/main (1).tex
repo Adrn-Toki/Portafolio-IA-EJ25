@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Regresion Lineal}
+\author{Adrián Esteban Morales Rodriguez}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+La regresión lineal simple es una regresión lineal con una variable independiente, también llamada variable explicativa, y una variable dependiente, también llamada variable de respuesta. En la regresión lineal simple, la variable dependiente es continua. 
+
+La regresión lineal simple ayuda a hacer predicciones y a comprender las relaciones entre una variable independiente y una variable dependiente. Por ejemplo, podrías querer saber cómo afecta la altura de un árbol (variable independiente) al número de hojas que tiene (variable dependiente). Recopilando datos y ajustando un sencillo modelo de regresión lineal, podrías predecir el número de hojas en función de la altura del árbol. Esta es la parte de "hacer predicciones". Pero este enfoque también revela cuánto cambia, por término medio, el número de hojas a medida que el árbol crece en altura, que es como también se utiliza la regresión lineal simple para comprender las relaciones.
+
+\section{Metodología}
+Para la realización de esta actividad tome los pasos a seguir por el libro de Aprende Maching Learning.
+Este ejercicio consta de predecir, a partir de los datos sobre articulos, cuantas veces será compartido el articulo en redes sociales.
+Utilice lo requerido para la práctica como Python, librerias como Scikit-Learn, compilado con Anaconda.
+\begin{itemize}
+\item Paso 1
+
+Importar las librerias:
+
+\includegraphics{librerias.png}
+\item Paso 2
+
+Leer el archivo .csv y ver el tamaño
+
+\includegraphics{1_1.png}
+
+\item Paso 3
+
+Visualizar las características de entrada
+
+\includegraphics[width=15cm, height=9cm]{2.png}
+
+\item Paso 4
+
+Filtrar los datos de cantidad de palabras para quedarnos con los registros con menos de 3,500 palabras y también con los que tengan Cantidad de compartidos menos a 80,000. Pintando en azul los
+ puntos con menos de 1808 palabras (la media) y en naranja los que tengan más.
+
+\includegraphics[width=15cm, height=9cm]{3.png}
+\includegraphics[width=15cm, height=9cm]{4.png}
+\item Paso 5
+
+Crear los datos de entrada solo Word Count y como etiquetas los \# Shares, crear el objeto LinearRegression y hacerlo encajar con el método fit().
+
+\includegraphics[width=15cm, height=9cm]{5.png}
+
+\end{itemize}
+
+\section{Resultados}
+
+Finalmente obtuve la siguiente predicción de la posible cantidad de compartidos en redes sociales con un articulo de 2000 palabras.
+
+\includegraphics{6.png}
+
+\section{Conclusión}
+
+La regresión lineal simple tiene limitaciones, como la necesidad de una relación lineal entre las variables y la sensibilidad a valores atípicos. Sin embargo, sigue siendo una técnica esencial para el análisis de datos y la toma de decisiones.
+Tras la realización de esta actividad solo tuve algunos incovennientes con el archivo el cual no lo lograba leer, pero pude solucionarlo y continue sin problema.
+
+\end{document}
